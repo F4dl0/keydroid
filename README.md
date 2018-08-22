@@ -1,5 +1,3 @@
-# keydroid
-
 # KeyDroid v1.0
 ## Author: https://github.com/thelinuxchoice/keydroid
 ## IG: https://www.instagram.com/thelinuxchoice
